@@ -2,7 +2,7 @@
 $domainUrl = 'theja.me/';
 $fileDir = "s/";
 $fileNameLength = 5;
-$secretKey = "sk13419ks"; //key
+$secretKey = "password"; //key
 function RandomString($length) {
 	$keys = array_merge(range(0,9), range('a', 'z'));
 	$key = "";
