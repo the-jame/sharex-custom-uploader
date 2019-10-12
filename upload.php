@@ -1,6 +1,6 @@
 <?php
-$domainUrl = 'theja.me/';
-$fileDir = "s/";
+$domainUrl = 'theja.me/';  //your domain
+$fileDir = "s/";  //directory for screenshots
 $fileNameLength = 5;
 $secretKey = "password"; //key
 function RandomString($length) {
@@ -23,7 +23,7 @@ if (isset($_POST['k'])) {
 		echo 'File upload failed';
 		}
 	} else {
-		echo 'INvalid secret';
+		echo 'Invalid secret';
 	}
 	} else {
 	echo 'No post data received';
