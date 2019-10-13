@@ -1,8 +1,8 @@
 <?php
-$domainUrl = 'theja.me/';  //your domain
-$fileDir = "s/";  //directory for screenshots
-$fileNameLength = 5;
-$secretKey = "password"; //key
+$domainUrl = 'EXAMPLE.COM/';	//your domain
+$fileDir = "S/";  		//directory for screenshots, here it's EXAMPLE.com/s/
+$fileNameLength = 5;		// length of the file name when complete
+$secretKey = "password"; 	//key
 function RandomString($length) {
 	$keys = array_merge(range(0,9), range('a', 'z'));
 	$key = "";
