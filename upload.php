@@ -1,10 +1,10 @@
 <?php
 $domainUrl = 'EXAMPLE.COM/';	//your domain
 $fileDir = "S/";  		//directory for screenshots, here it's EXAMPLE.com/S/
-$fileNameLength = 5;		// length of the file name when complete
+$fileNameLength = 4;		// length of the file name when complete
 $secretKey = "password"; 	//key
 function RandomString($length) {
-	$keys = array_merge(range(0,9), range('a', 'z'));
+	$keys = array_merge(range('A', 'Z'), range(0,9), range('a', 'z'));
 	$key = "";
 
 	for ($i=0; $i < $length; $i++) {
@@ -20,11 +20,11 @@ if (isset($_POST['k'])) {
 		if (move_uploaded_file($_FILES["d"]["tmp_name"], $fileDir.$filename.'.'.$fileType)) {
 		  echo $domainUrl.$fileDir.$filename.'.'.$fileType;
 	} else {
-		echo 'File upload failed';
+		echo 'File upload failed!';
 		}
 	} else {
-		echo 'Invalid secret';
+		echo 'Invalid key!';
 	}
 	} else {
-	echo 'No post data received';
+	echo 'No POST data received!';
 }
