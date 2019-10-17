@@ -2,7 +2,7 @@
 $domainUrl = 'EXAMPLE.COM/';	//your domain
 $fileDir = "S/";  		//directory for screenshots, here it's EXAMPLE.com/S/
 $fileNameLength = 4;		// length of the file name when complete
-$secretKey = "password"; 	//key
+$secretKey = "PASSWORD"; 	//key
 function RandomString($length) {
 	$keys = array_merge(range('A', 'Z'), range(0,9), range('a', 'z'));
 	$key = "";
